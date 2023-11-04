@@ -1,0 +1,48 @@
+.navBar {
+  height: 8vh;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 5px 5px -2px rgba(0, 0, 0, 0.2);
+  /* Additional style for the dropdown menu items */
+}
+.navBar .dropdown-menu {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 4px;
+  flex-direction: row;
+  margin-left: 30px;
+  cursor: pointer;
+}
+.navBar .dropdown-content {
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.2);
+  border: 0px solid black;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin-left: 30px;
+  margin-top: 160px;
+}
+.navBar .dropdown-content .dropdown-row {
+  display: flex;
+  justify-content: space-between;
+}
+.navBar .dropdown-content .dropdown-row div {
+  padding: 2px;
+  margin: 5px 0;
+}
+.navBar .dropdown-content .dropdown-row div select {
+  width: 120px;
+  border: 1px solid black;
+  border-radius: 4px;
+  padding: 2px;
+  margin: 5px 0;
+}
+.navBar .dropdown-content div {
+  padding: 0.5rem;
+} /*# sourceMappingURL=navBar.css.map */
