@@ -4,12 +4,14 @@ import './Card.css'
 import { PiCircleDuotone } from 'react-icons/pi';
 
 const Card = (props) => {
-  
+  const {ticket} = props;
+  const {id, title, status, priority, userId} = ticket;
+  console.log(ticket);
   return (
     <div className='card'>
       <div>
-        <div id='id' className='card-content'>CAM II</div>
-        <div id='title' className='card-content'>Update User Profile Page UI</div>
+        <div id='id' className='card-content'>{id}</div>
+        <div id='title' className='card-content'>{title}</div>
         <div id='feature' className='card-content'>
           <div>
             <PiCircleDuotone/>

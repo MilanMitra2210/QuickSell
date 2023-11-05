@@ -6,12 +6,14 @@ import Content from './content/Content';
 
 const NavBar = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-  const [group,setGroup] = useState("status");
+  const [group,setGroup] = useState("Status");
   const [order,setOrder] = useState("Priority");
 
   const toggleDropdown = () => {
     setIsDropdownOpen(!isDropdownOpen);
   };
+
+  
 
   return (
     <>
@@ -30,7 +32,7 @@ const NavBar = () => {
             <div className="dropdown-row">
               <div>Grouping</div>
               <div>
-                <select name="status" className="list" onChange={(e)=>{setGroup(e.target.value)}}>
+                <select name="Status" className="list" onChange={(e)=>{setGroup(e.target.value)}}>
                   <option value="Status">Status</option>
                   <option value="User">User</option>
                   <option value="Priority">Priority</option>
@@ -49,7 +51,7 @@ const NavBar = () => {
           </div>
         )}
       </div>
-      <Content/>
+      <Content group={group} order={order}/> 
     </>
   );
 };

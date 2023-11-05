@@ -10,6 +10,8 @@
 }
 .card .card-content {
   padding: 0.3rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 .card #id {
   color: #888888;

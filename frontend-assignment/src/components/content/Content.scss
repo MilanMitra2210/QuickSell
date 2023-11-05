@@ -1,9 +1,10 @@
 .row{
     display: flex;
+    background-color: rgb(235, 235, 239);
     .col{
         background-color: rgb(235, 235, 239);
         width: 20%;
-        height: 100vh;
+        height: 100%;
         display: flex;
         flex-direction: column;
         // justify-content: space-between;
