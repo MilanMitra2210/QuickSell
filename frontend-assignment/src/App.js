@@ -1,11 +1,12 @@
 import NavBar from './components/NavBar';
-import Card from './components/Card';
+import Content from './components/content/Content';
+// import Card from './components/card/Card';
 
 function App() {
   return (
     <>
       <NavBar/>
-      <Card/>
+      <Content/>
     </>
   );
 }

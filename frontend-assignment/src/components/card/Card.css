@@ -1,0 +1,7 @@
+.card {
+  display: flex;
+  border: 1px solid black;
+  width: -moz-fit-content;
+  width: fit-content;
+  justify-content: center;
+}/*# sourceMappingURL=Card.css.map */

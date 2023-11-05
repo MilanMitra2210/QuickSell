@@ -1,0 +1,23 @@
+.row {
+  display: flex;
+}
+.row .col {
+  background-color: rgb(244, 244, 248);
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+}
+.row .col .top {
+  display: flex;
+  justify-content: space-between;
+}
+.row .col .top .left {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+}
+.row .col .top .right {
+  width: 20%;
+  display: flex;
+  justify-content: space-around;
+}/*# sourceMappingURL=content.css.map */
