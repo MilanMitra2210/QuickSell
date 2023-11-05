@@ -6,11 +6,12 @@
         height: 100vh;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        // justify-content: space-between;
 
         .top{
             display: flex;
             justify-content: space-between;
+            padding-top: 2rem;
             .left{
                 width: 50%;
                 display: flex;

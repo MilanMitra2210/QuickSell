@@ -4,14 +4,14 @@ import { AiOutlinePlus } from "react-icons/ai";
 import Card from '../card/Card';
 
 const Column = (props) => {
-    const {data , count, ChildComponent} = props;
+    const {title , count, ChildComponent, data} = props;
   return (
     <>
         <div className='col'>
             <div className='top'>
                 <div className='left'>
                     <div>{ChildComponent && <ChildComponent />}</div>
-                    <div>{data}</div>
+                    <div>{title}</div>
                     <div id='count'>{count}</div>
                 </div>
                 <div className='right'>
@@ -19,9 +19,9 @@ const Column = (props) => {
                     <div><BiDotsHorizontalRounded/></div>
                 </div>
             </div>
-            <Card/>
-            <Card/>
-            <Card/>
+            {data.map((item) => (
+                <Card data={item}/>
+            ))}
         </div>
     </>
   )
