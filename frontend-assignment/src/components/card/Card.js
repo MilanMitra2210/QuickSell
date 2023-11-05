@@ -6,7 +6,7 @@ import { PiCircleDuotone } from 'react-icons/pi';
 const Card = (props) => {
   const {ticket} = props;
   const {id, title, status, priority, userId} = ticket;
-  console.log(ticket);
+  // console.log(ticket);
   return (
     <div className='card'>
       <div>

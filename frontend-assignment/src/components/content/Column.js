@@ -4,9 +4,9 @@ import { AiOutlinePlus } from "react-icons/ai";
 import Card from './../card/Card';
 
 const Column = (props) => {
-    const {title , count, ChildComponent, data, group} = props;
+    const {title , count, ChildComponent, data, group,order} = props;
     const [filteredData,setFilteredData] = useState([]);
-    console.log(group);
+    // console.log(order);
     useEffect(()=>{
         if(group === "Priority"){
               const tempData = [];
@@ -15,6 +15,8 @@ const Column = (props) => {
                   tempData.push(ticket);
                 }
               });
+
+              tempData.sort((a, b) => a.title.localeCompare(b.title));
               setFilteredData(tempData);
         }
         else if(group === "Status"){
@@ -25,14 +27,29 @@ const Column = (props) => {
                 tempData.push(ticket);
               }
             });
+
+            console.log(tempData);
+              if (order === "Priority") {
+                tempData.sort((a, b) => (b.priority > a.priority ? 1 : -1));
+              } else if (order === "Title") {
+                tempData.sort((a, b) => a.title.localeCompare(b.title));
+              }
+            console.log(tempData);
+
             setFilteredData(tempData);
         }
         else if(group === "User"){
+              console.log(data);
+              if (order === "Priority") {
+                data.sort((a, b) => (b.priority > a.priority ? 1 : -1));
+              } else if (order === "Title") {
+                data.sort((a, b) => a.title.localeCompare(b.title));
+              }
             setFilteredData(data);
         }
-    },[title]);
-     console.log(data);
-     console.log(filteredData);
+    },[title,order]);
+    //  console.log(data);
+    //  console.log(filteredData);
   return (
     <>
         <div className='col'>
@@ -48,7 +65,7 @@ const Column = (props) => {
                 </div>
             </div>
             {filteredData.map((item,index) => {
-                console.log(item);
+                {/* console.log(item); */}
                 return <Card ticket={item} key={index}/>;
             })}
         </div>

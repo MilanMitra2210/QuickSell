@@ -64,11 +64,11 @@ const Content =  (props) => {
         {
             data.length!=0 && group==="Status" &&
             <div className="row">
-                <Column title="Backlog" count="2" ChildComponent={FaExclamationCircle} data={data} group={group}/>
-                <Column title="Todo" count="2" ChildComponent={PiCircleDuotone} data={data} group={group}/>
-                <Column title="In progress" count="2" ChildComponent={TbProgress} data={data} group={group}/>
-                <Column title="Done" count="2" ChildComponent={IoCheckmarkDoneCircleOutline} data={data} group={group}/>
-                <Column title="Canceled" count="2" ChildComponent={GiCancel} data={data} group={group}/>
+                <Column title="Backlog" count="2" ChildComponent={FaExclamationCircle} data={data} group={group} order={order}/>
+                <Column title="Todo" count="2" ChildComponent={PiCircleDuotone} data={data} group={group} order={order}/>
+                <Column title="In progress" count="2" ChildComponent={TbProgress} data={data} group={group} order={order}/>
+                <Column title="Done" count="2" ChildComponent={IoCheckmarkDoneCircleOutline} data={data} group={group} order={order}/>
+                <Column title="Canceled" count="2" ChildComponent={GiCancel} data={data} group={group} order={order}/>
             </div>    
         }
 
@@ -76,7 +76,7 @@ const Content =  (props) => {
             userData.length!=0 && group === "User" && 
             <div className="row">
                 {userData.map((item, index) => {
-                    return <Column title={item.name} count={item.data.length} ChildComponent={FaUserAlt} data={item.data} group={group}/>;
+                    return <Column title={item.name} count={item.data.length} ChildComponent={FaUserAlt} data={item.data} group={group} order={order}/>;
                 })}
             </div>
         }
