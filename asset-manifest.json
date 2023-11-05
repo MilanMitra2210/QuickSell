@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/QuickSell/static/css/main.6ffa4e50.css",
-    "main.js": "/QuickSell/static/js/main.8006255e.js",
+    "main.css": "/QuickSell/static/css/main.45632e6f.css",
+    "main.js": "/QuickSell/static/js/main.42d8579c.js",
     "index.html": "/QuickSell/index.html",
-    "main.6ffa4e50.css.map": "/QuickSell/static/css/main.6ffa4e50.css.map",
-    "main.8006255e.js.map": "/QuickSell/static/js/main.8006255e.js.map"
+    "main.45632e6f.css.map": "/QuickSell/static/css/main.45632e6f.css.map",
+    "main.42d8579c.js.map": "/QuickSell/static/js/main.42d8579c.js.map"
   },
   "entrypoints": [
-    "static/css/main.6ffa4e50.css",
-    "static/js/main.8006255e.js"
+    "static/css/main.45632e6f.css",
+    "static/js/main.42d8579c.js"
   ]
 }
