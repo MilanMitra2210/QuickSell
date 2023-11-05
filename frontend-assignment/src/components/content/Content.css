@@ -2,10 +2,12 @@
   display: flex;
 }
 .row .col {
-  background-color: rgb(244, 244, 248);
+  background-color: rgb(235, 235, 239);
   width: 20%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 .row .col .top {
   display: flex;

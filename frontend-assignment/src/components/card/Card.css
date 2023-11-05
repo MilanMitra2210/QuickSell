@@ -1,7 +1,27 @@
 .card {
   display: flex;
-  border: 1px solid black;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+  border-radius: 8px;
+  width: 90%;
+  box-shadow: 4px 3px 3px #d4d2d2 inset, 4px 3px 3px #ccc8c8;
+  justify-content: space-around;
+}
+.card .card-content {
+  padding: 0.3rem;
+}
+.card #id {
+  color: #888888;
+}
+.card #feature {
+  border: 0.5px solid grey;
+  border-radius: 5px;
   width: -moz-fit-content;
   width: fit-content;
-  justify-content: center;
+  padding: 7px;
+  color: grey;
+  display: flex;
+}
+.card #feature div {
+  padding-left: 0.3rem;
 }/*# sourceMappingURL=Card.css.map */

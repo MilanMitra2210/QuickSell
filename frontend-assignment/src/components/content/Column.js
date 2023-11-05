@@ -21,6 +21,7 @@ const Column = (props) => {
             </div>
             <Card/>
             <Card/>
+            <Card/>
         </div>
     </>
   )

@@ -1,6 +1,29 @@
 .card{
     display: flex;
-    border: 1px solid black;
-    width: fit-content;
-    justify-content: center;
+    // border: 1px solid black;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    border-radius: 8px;
+    width: 90%;
+    box-shadow: 4px 3px 3px #d4d2d2 inset, 4px 3px 3px #ccc8c8;
+    justify-content: space-around;
+
+    .card-content{
+        padding: 0.3rem;
+    }
+    #id{
+        color: #888888;
+    }
+    #feature{
+        border: .5px solid grey;
+        border-radius: 5px;
+        width: fit-content;
+        padding: 7px;
+        color: grey;
+        display: flex;
+
+        div{
+            padding-left: 0.3rem ;
+        }
+    }
 }
