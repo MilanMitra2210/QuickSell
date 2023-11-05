@@ -53,22 +53,22 @@ const Content =  (props) => {
         {
             data.length!=0 && group==="Priority" && 
             <div className="row">
-                <Column title="No priority" count="2" ChildComponent={BiDotsHorizontalRounded} data={data} num={0} group={group}/>
-                <Column title="Urgent" count="2" ChildComponent={BsExclamationSquareFill} data={data} num={4} group={group}/>
-                <Column title="High" count="2" ChildComponent={LuSignalHigh} data={data} num={3} group={group}/>
-                <Column title="Medium" count="2" ChildComponent={PiCellSignalMediumBold} data={data} num={2} group={group}/>
-                <Column title="Low" count="2" ChildComponent={LuSignalLow} data={data} num={1} group={group}/>
+                <Column title="No priority" count={data.tickets.length} ChildComponent={BiDotsHorizontalRounded} data={data} num={0} group={group}/>
+                <Column title="Urgent" count={data.tickets.length} ChildComponent={BsExclamationSquareFill} data={data} num={4} group={group}/>
+                <Column title="High" count={data.tickets.length} ChildComponent={LuSignalHigh} data={data} num={3} group={group}/>
+                <Column title="Medium" count={data.tickets.length} ChildComponent={PiCellSignalMediumBold} data={data} num={2} group={group}/>
+                <Column title="Low" count={data.tickets.length} ChildComponent={LuSignalLow} data={data} num={1} group={group}/>
             </div>
         }
 
         {
             data.length!=0 && group==="Status" &&
             <div className="row">
-                <Column title="Backlog" count="2" ChildComponent={FaExclamationCircle} data={data} group={group} order={order}/>
-                <Column title="Todo" count="2" ChildComponent={PiCircleDuotone} data={data} group={group} order={order}/>
-                <Column title="In progress" count="2" ChildComponent={TbProgress} data={data} group={group} order={order}/>
-                <Column title="Done" count="2" ChildComponent={IoCheckmarkDoneCircleOutline} data={data} group={group} order={order}/>
-                <Column title="Canceled" count="2" ChildComponent={GiCancel} data={data} group={group} order={order}/>
+                <Column title="Backlog" count={data.tickets.length} ChildComponent={FaExclamationCircle} data={data} group={group} order={order}/>
+                <Column title="Todo" count={data.tickets.length} ChildComponent={PiCircleDuotone} data={data} group={group} order={order}/>
+                <Column title="In progress" count={data.tickets.length} ChildComponent={TbProgress} data={data} group={group} order={order}/>
+                <Column title="Done" count={data.tickets.length} ChildComponent={IoCheckmarkDoneCircleOutline} data={data} group={group} order={order}/>
+                <Column title="Canceled" count={data.tickets.length} ChildComponent={GiCancel} data={data} group={group} order={order}/>
             </div>    
         }
 

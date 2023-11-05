@@ -57,7 +57,7 @@ const Column = (props) => {
                 <div className='left'>
                     <div>{ChildComponent && <ChildComponent />}</div>
                     <div>{title}</div>
-                    <div id='count'>{count}</div>
+                    <div id='count'>{filteredData.length}</div>
                 </div>
                 <div className='right'>
                     <div><AiOutlinePlus/></div>
