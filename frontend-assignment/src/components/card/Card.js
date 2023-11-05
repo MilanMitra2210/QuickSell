@@ -21,7 +21,7 @@ const Card = (props) => {
           </div>
         </div>
       </div>
-      <div>
+      <div className='profile'>
         <CgProfile/>
       </div>
     </div>

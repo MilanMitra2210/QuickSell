@@ -8,6 +8,15 @@
     width: 90%;
     box-shadow: 4px 3px 3px #d4d2d2 inset, 4px 3px 3px #ccc8c8;
     justify-content: space-around;
+    background-color: white;
+
+    div{
+        padding-left: 1rem;
+        // padding-right: 1rem;
+    }
+    .profile{
+        padding-right: 0.5rem;
+    }
 
     .card-content{
         padding: 0.3rem;
@@ -16,6 +25,10 @@
     }
     #id{
         color: #888888;
+    }
+    #title{
+        padding-left: 0;
+        padding-right: 0;
     }
     #feature{
         border: .5px solid grey;

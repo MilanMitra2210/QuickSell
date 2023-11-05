@@ -7,6 +7,13 @@
   width: 90%;
   box-shadow: 4px 3px 3px #d4d2d2 inset, 4px 3px 3px #ccc8c8;
   justify-content: space-around;
+  background-color: white;
+}
+.card div {
+  padding-left: 1rem;
+}
+.card .profile {
+  padding-right: 0.5rem;
 }
 .card .card-content {
   padding: 0.3rem;
@@ -15,6 +22,10 @@
 }
 .card #id {
   color: #888888;
+}
+.card #title {
+  padding-left: 0;
+  padding-right: 0;
 }
 .card #feature {
   border: 0.5px solid grey;
