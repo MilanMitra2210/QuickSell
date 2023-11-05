@@ -5,6 +5,11 @@ import { BiDotsHorizontalRounded } from "react-icons/bi";
 import { LuSignalHigh, LuSignalLow } from "react-icons/lu";
 import { PiCellSignalMediumBold } from "react-icons/pi";
 import {FaUserAlt} from "react-icons/fa";
+import {PiCircleDuotone} from "react-icons/pi";
+import {TbProgress} from "react-icons/tb";
+import {IoCheckmarkDoneCircleOutline} from "react-icons/io5";
+import {GiCancel} from "react-icons/gi";
+import {FaExclamationCircle} from "react-icons/fa";
 import axios from 'axios';
 
 import Column from './Column';
@@ -59,11 +64,11 @@ const Content =  (props) => {
         {
             data.length!=0 && group==="Status" &&
             <div className="row">
-                <Column title="Backlog" count="2" ChildComponent={BiDotsHorizontalRounded} data={data} group={group}/>
-                <Column title="Todo" count="2" ChildComponent={BsExclamationSquareFill} data={data} group={group}/>
-                <Column title="In progress" count="2" ChildComponent={LuSignalHigh} data={data} group={group}/>
-                <Column title="Done" count="2" ChildComponent={PiCellSignalMediumBold} data={data} group={group}/>
-                <Column title="Canceled" count="2" ChildComponent={LuSignalLow} data={data} group={group}/>
+                <Column title="Backlog" count="2" ChildComponent={FaExclamationCircle} data={data} group={group}/>
+                <Column title="Todo" count="2" ChildComponent={PiCircleDuotone} data={data} group={group}/>
+                <Column title="In progress" count="2" ChildComponent={TbProgress} data={data} group={group}/>
+                <Column title="Done" count="2" ChildComponent={IoCheckmarkDoneCircleOutline} data={data} group={group}/>
+                <Column title="Canceled" count="2" ChildComponent={GiCancel} data={data} group={group}/>
             </div>    
         }
 

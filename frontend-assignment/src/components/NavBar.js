@@ -19,11 +19,11 @@ const NavBar = () => {
     <>
       <div className="navBar">
         <div className="dropdown-menu" onClick={toggleDropdown}>
-          <div>
+          <div className="dropdown-menu-text">
             <GiSettingsKnobs />
           </div>
-          <div>Display</div>
-          <div>
+          <div className="dropdown-menu-text">Display</div>
+          <div className="dropdown-menu-text">
             <BiChevronDown />
           </div>
         </div>

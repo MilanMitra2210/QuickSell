@@ -19,6 +19,9 @@
   margin-left: 30px;
   cursor: pointer;
 }
+.navBar .dropdown-menu .dropdown-menu-text{
+  padding: .5rem;
+}
 .navBar .dropdown-content {
   position: absolute;
   background-color: #fff;
