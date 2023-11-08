@@ -5,8 +5,8 @@ import { PiCircleDuotone } from 'react-icons/pi';
 
 const Card = (props) => {
   const {ticket} = props;
-  const {id, title, status, priority, userId} = ticket;
-  // console.log(ticket);
+  const {id, title, status, priority, tag,  userId} = ticket;
+  console.log(ticket);
   return (
     <div className='card'>
       <div>
@@ -17,7 +17,7 @@ const Card = (props) => {
             <PiCircleDuotone/>
           </div>
           <div>
-          Feature Request
+          {tag[0]}
           </div>
         </div>
       </div>
